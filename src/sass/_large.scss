@@ -1,0 +1,35 @@
+@media (min-width: 576px) {
+	body {
+		padding: 4rem;
+	}
+
+	.gallery {
+		padding: 4rem;
+	}
+	.popup {
+		&__close {
+			font-size: 3.3rem;
+		}
+		&__next, &__back{
+			font-size: 2rem;
+			
+		}
+		&__next{
+			right: 4rem;
+		}
+		&__back{
+			left: 4rem;
+		}
+		&__info {
+			&__title{
+				font-size: 1.4rem;
+			}
+			&__name{
+				font-size: 1.5rem;
+			}
+			&__number{
+				font-size: 1.2rem;
+			}
+		}
+	}
+}
