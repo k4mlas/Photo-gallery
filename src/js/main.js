@@ -9,13 +9,13 @@ const popupInfo = document.querySelector('.popup__info');
 const popupImg = document.createElement('img');
 let popupImgName;
 let indexImg;
-
+////////////////////////////////////////////////////////
 photos.forEach((photo, index) => {
 	photo.addEventListener('click', (e) => {
-		body.classList.add('scrollNone');
-		popup.classList.add('show');
-		popupImg.setAttribute('src', '');
-		popupImg.classList.add('popup__img');
+		body.classList.add('scrollNone'); // blokujemy stronę
+		popup.classList.add('show'); //otwieramy nasz popup - zmienia display none na flex
+		popupImg.setAttribute('src', ''); // tworzymy atrybut src w img
+		popupImg.classList.add('popup__img'); // dodajemy klase z scc zmieającą szerokość i wysokość zdjęcia
 		popup.appendChild(popupImg);
 		popupImg.src = e.target.src;
 		indexImg = index;
